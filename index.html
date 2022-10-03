@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>INFO2180 Lab 2</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <header>
+          <img src="me_pic.JPG" alt="Picture of myself" id="top-img" />
+          <h1 id="blogger-name">Shanice Jones's Blog</h1>
+          <p id="blogger-quote"> The world was meant to be discovered </p>
+        </header>
+      </nav>
+      <div id="main">
+        <div id="main-div">
+          <main>
+            <article>
+              <h2> What is a Blockchain? </h2>
+              <p class="Date-Author">October 2,2022 by Shanice Jones </p>
+              <img
+                src="block_img.png"alt="Picture of a block chain" id="first-blog-img"/>
+              <p>A block chain is chain of block which contain information. This technique was orginated in 1991 from a group of researchers. It was originally intended to time stamp original documents so that its not possible to tamper with them. This technique was not quite popular until it was adopted by Satoshi Nakamoto to create the digital currency bitcoin. Dispite what one might think knowing of bitcoin, blockchain is a distributed ledger that is open to anyone. So yes, it is accessible, however, the information in the blockchain cannot be changed. Now you might be wondering how tghis is possible.</p>
+              <p>When taking a closer look at a block, each block has data, a hash and hash of the previous block. In the case of bitcoin the data would be the details of a transaction. As for the hash this is like a unique identifier for a block and can be thought of like fingerprint. Once a block is created its hash is being created and making changes to the block will cause changes to the hash. Then the third element of the block chain is the hash of the previous block this is what forms the chain and makes the blockchain secure. For example, block 3 has the hash of block 2 and block 2 has the hash of block 1. If someone were to tamper with block 2 the hash of block 2 would change and this would affect the rest of the blockchain because block 3 and all following block would have the wrong previous hash making the chain invalid.</p>
+            </article>
+            <hr />
+            <article>
+              <h2>Is The Use of Hashes Enough?</h2>
+              <p class="Date-Author">October 2,2022 By Shanice Jones</p>
+              <img src="img_2.png" alt="Picture of person using computer" id="main-second-blog-img"/>
+              <p>The modern coputer is very fast and can calculate hundreds of thousands of hashes per second. This means one could tamper with a block and be able to recalculate all the hashes of other blocks making your chain valid again. So, to answer the question the use of hashes is not enough to secure a blockchain. Which is why there is a mechanism slow down the creation of blocks called proof of work.</p>
+              <p>Proof of work makes it harder to tamper with blocks as you would need to recalculate the proof of work for all the blocks and that would take alot of time. For example the proof of work could take 10-15 minutes to produce, doing this 3-4 times doesn't seem like alot but imagine on a larger scale. Doing proof of work for possibly hundreds of thousands of blocks becomes a much more difficult task for computers to manage and this further secures the block chain. </p>
+              <p> </p>
+            </article>
+          </main>
+        </div>
+        <div id="side-div">
+          <aside>
+            <div id="About-Section">
+            <h3 id="About">About</h3>
+            <p>
+              I major in computer science and minor in accounting. I like watching tv shows and movies. I am interested in web development because I would like to build websites. I aspire to own a business in the future and hopefully I will gain the ability from this course to create a website for it.
+            </p>
+            </div>
+            <div>
+            <h3 class="Social">Social Media</h3>
+            <ul>
+              <li>
+                <a href="https://github.com/shanice-spec/info2180-lab2.git">Github</a>
+                <li><a href="https://Facebook.com">Facebook</a></li>
+                <li><a href="https://Twitter.com">Twitter</a></li>
+              </li>
+            </ul>
+            </div>
+            <div>
+            <h3 class="Soci-Arch">Archives</h3>
+            <ul>
+                <li>
+                  <a href="https://Youtube.com">Youtube</a>
+                  <li><a href="https://Gogoanimes.tv">Videos</a></li>
+                </li>
+              </ul>
+              </div>
+          </aside>
+        </div>
+      </div>
+
+      <footer>
+        <p>Copyright &copy; 2022, Shanice Jones</p>
+      </footer>
+    </div>
+  </body>
+</html>
